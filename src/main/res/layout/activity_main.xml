@@ -19,12 +19,7 @@
         android:lines="1"
         android:padding="8dp"
         android:text=""
-
-        android:gravity="end"
-
-        android:textColor="@color/textColor"
-        android:textColorHint="@color/textColor"
-
+        android:gravity="right"
         android:textSize="70sp"
 
         app:layout_constraintEnd_toEndOf="parent"
