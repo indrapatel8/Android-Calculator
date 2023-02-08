@@ -20,12 +20,12 @@
         <item name="android:shadowDx">0</item>
         <item name="android:shadowDy">-1</item>
         <item name="android:shadowRadius">0.2</item>
-        <item name="android:textSize">32dip</item>
+        <item name="android:textSize">28dip</item>
         <item name="android:textStyle">bold</item>
         <item name="android:focusable">true</item>
         <item name="android:clickable">true</item>
-        <item name="android:layout_width">85dp</item>
-        <item name="android:layout_height">85dp</item>
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
         <item name="android:layout_margin">2dp</item>
     </style>
 </resources>
