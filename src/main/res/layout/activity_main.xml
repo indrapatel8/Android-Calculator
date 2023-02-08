@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/editTextNumberDecimal"
+        android:id="@+id/edDisplay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="start"
@@ -17,7 +17,7 @@
         android:ems="10"
         android:gravity="right"
         android:inputType="numberDecimal"
-        android:text="123123"
+        android:hint="0"
         android:textSize="70sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,8 +28,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="4dp"
-
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal"
+        app:layout_constraintTop_toBottomOf="@+id/edDisplay"
         tools:layout_editor_absoluteX="1dp">
 
         <LinearLayout
@@ -128,19 +127,19 @@
             <Button
                 android:id="@+id/btnmul"
                 style="@style/button"
-                android:textSize="60dp"
+                android:textSize="40dp"
                 android:text="*" />
 
             <Button
                 android:id="@+id/btndiv"
                 style="@style/button"
-                android:textSize="60dp"
+                android:textSize="40dp"
                 android:text="/" />
 
             <Button
                 android:id="@+id/btnmin"
                 style="@style/button"
-                android:textSize="60dp"
+                android:textSize="40dp"
                 android:text="-" />
 
             <Button
@@ -149,7 +148,7 @@
                 android:textAlignment="center"
                 android:padding="0dp"
                 android:layout_marginTop="0dp"
-                android:textSize="60dp"
+                android:textSize="40dp"
                 android:gravity="center"
                 android:text="+" />
         </LinearLayout>
@@ -163,20 +162,20 @@
             <Button
                 android:id="@+id/btnclr"
                 style="@style/button"
-                android:textSize="40dp"
+                android:textSize="30dp"
                 android:text="C" />
 
             <Button
                 android:id="@+id/btnclearall"
                 style="@style/button"
-                android:textSize="40dp"
-                android:text="CE" />
+                android:textSize="30dp"
+                android:text="CA" />
 
             <Button
                 android:id="@+id/btneq"
                 android:layout_weight="2"
                 style="@style/button"
-                android:textSize="60dp"
+                android:textSize="40dp"
                 android:text="=" />
 
         </LinearLayout>
