@@ -10,37 +10,34 @@
         android:id="@+id/edDisplay"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:layout_gravity="start"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:ems="10"
-        android:gravity="right"
-        android:hint="0"
         android:background="@drawable/border"
-        android:textColor="@color/textColor"
-        android:textColorHint="@color/textColor"
-
+        android:ems="10"
+        android:hint="0"
         android:lines="1"
         android:padding="8dp"
         android:text=""
 
-        android:textDirection="rtl"
+        android:gravity="end"
+
+        android:textColor="@color/textColor"
+        android:textColorHint="@color/textColor"
+
         android:textSize="70sp"
-        app:autoSizeMaxTextSize="70sp"
-        app:autoSizeMinTextSize="32sp"
-        app:autoSizeStepGranularity="2sp"
-        app:autoSizeTextType="uniform"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="vertical"
         android:layout_margin="8dp"
         android:background="@drawable/border"
+        android:gravity="center"
+        android:orientation="vertical"
         app:layout_constraintTop_toBottomOf="@+id/edDisplay"
         tools:layout_editor_absoluteX="1dp">
 
