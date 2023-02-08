@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
@@ -27,7 +28,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var btnclr: Button
     private lateinit var btnclearall: Button
     private lateinit var btneq: Button
-    private lateinit var edText: EditText
+    private lateinit var edText: TextView
 
     private lateinit var mode: String
     private lateinit var firstNumber: String
