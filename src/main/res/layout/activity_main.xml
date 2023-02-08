@@ -15,32 +15,40 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:ems="10"
-        android:text=""
         android:gravity="right"
+        android:hint="0"
+        android:background="@drawable/border"
+        android:textColor="@color/textColor"
+        android:textColorHint="@color/textColor"
+
+        android:lines="1"
+        android:padding="8dp"
+        android:text=""
+
         android:textDirection="rtl"
-        app:autoSizeMinTextSize="32sp"
+        android:textSize="70sp"
         app:autoSizeMaxTextSize="70sp"
+        app:autoSizeMinTextSize="32sp"
         app:autoSizeStepGranularity="2sp"
         app:autoSizeTextType="uniform"
-        android:hint="0"
-        android:textSize="70sp"
-        android:lines="1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
+    <!--        android:background="@drawable/border"-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:gravity="center"
-        android:padding="4dp"
+        android:orientation="vertical"
+        android:layout_margin="8dp"
+        android:background="@drawable/border"
         app:layout_constraintTop_toBottomOf="@+id/edDisplay"
         tools:layout_editor_absoluteX="1dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
             android:gravity="center">
 
             <Button
@@ -68,8 +76,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:orientation="horizontal"
-            android:padding="4dp">
+            android:orientation="horizontal">
 
             <Button
                 android:id="@+id/btn5"
@@ -96,8 +103,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:orientation="horizontal"
-            android:padding="4dp">
+            android:orientation="horizontal">
 
             <Button
                 android:id="@+id/btn9"
@@ -117,73 +123,73 @@
             <Button
                 android:id="@+id/btndot"
                 style="@style/button"
-                android:textAlignment="center"
-                android:padding="0dp"
                 android:layout_marginTop="0dp"
-                android:textSize="60dp"
                 android:gravity="center"
-                android:text="." />
+                android:padding="0dp"
+                android:text="."
+                android:textAlignment="center"
+                android:textSize="60dp" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:orientation="horizontal"
-            android:padding="4dp">
+            android:orientation="horizontal">
 
             <Button
                 android:id="@+id/btnmul"
                 style="@style/button"
-                android:textSize="40dp"
-                android:text="*" />
+                android:text="*"
+                android:textSize="40dp" />
 
             <Button
                 android:id="@+id/btndiv"
                 style="@style/button"
-                android:textSize="40dp"
-                android:text="/" />
+                android:text="/"
+                android:textSize="40dp" />
 
             <Button
                 android:id="@+id/btnmin"
                 style="@style/button"
-                android:textSize="40dp"
-                android:text="-" />
+                android:text="-"
+                android:textSize="40dp" />
 
             <Button
                 android:id="@+id/btnadd"
                 style="@style/button"
-                android:textAlignment="center"
-                android:padding="0dp"
                 android:layout_marginTop="0dp"
-                android:textSize="40dp"
                 android:gravity="center"
-                android:text="+" />
+                android:padding="0dp"
+                android:text="+"
+                android:textAlignment="center"
+                android:textSize="40dp" />
         </LinearLayout>
+
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:orientation="horizontal"
-            android:padding="4dp">
+            android:orientation="horizontal">
 
             <Button
                 android:id="@+id/btnclr"
                 style="@style/button"
-                android:textSize="30dp"
-                android:text="C" />
+                android:text="C"
+                android:textSize="30dp" />
 
             <Button
                 android:id="@+id/btnclearall"
                 style="@style/button"
-                android:textSize="30dp"
-                android:text="CA" />
+                android:text="CA"
+                android:textSize="30dp" />
 
             <Button
                 android:id="@+id/btneq"
                 style="@style/button"
                 android:layout_width="160dp"
-                android:textSize="40dp"
-                android:text="=" />
+                android:text="="
+                android:textSize="50dp" />
 
         </LinearLayout>
     </LinearLayout>
