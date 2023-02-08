@@ -135,7 +135,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun reset() {
-        mode = "-";
+        mode = "";
         firstNumber = ""
         edText.setText("")
     }
