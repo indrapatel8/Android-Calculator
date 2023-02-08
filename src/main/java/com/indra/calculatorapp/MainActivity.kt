@@ -98,7 +98,10 @@ class MainActivity : AppCompatActivity() {
             edText.setText("")
         }
         btnclr.setOnClickListener {
-            edText.setText(edText.text.toString().subSequence(0, edText.text.toString().length - 1))
+            if (edText.text.length != 0)
+                edText.setText(
+                    edText.text.toString().subSequence(0, edText.text.toString().length - 1)
+                )
         }
         btnclearall.setOnClickListener {
             reset()
