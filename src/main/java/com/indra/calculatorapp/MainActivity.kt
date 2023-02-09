@@ -33,6 +33,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var mode: String
     private lateinit var firstNumber: String
+    private lateinit var result: String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -116,23 +117,22 @@ class MainActivity : AppCompatActivity() {
         btneq.setOnClickListener {
             if (!mode.equals("")) {
                 if (mode.equals("+"))
-                    edText.setText(
-                        "" + (firstNumber.toDouble() + edText.text.toString().toDouble())
-                    )
+                    result = "" + (firstNumber.toDouble() + edText.text.toString().toDouble())
                 else if (mode.equals("*"))
-                    edText.setText(
-                        "" + (firstNumber.toDouble() * edText.text.toString().toDouble())
-                    )
+                    result = "" + (firstNumber.toDouble() * edText.text.toString().toDouble())
                 else if (mode.equals("-"))
-                    edText.setText(
-                        "" + (firstNumber.toDouble() - edText.text.toString().toDouble())
-                    )
+                    result = "" + (firstNumber.toDouble() - edText.text.toString().toDouble())
                 else if (mode.equals("/"))
-                    edText.setText(
-                        "" + (firstNumber.toDouble() / edText.text.toString().toDouble())
-                    )
+                    result = "" + (firstNumber.toDouble() / edText.text.toString().toDouble())
+
+
                 firstNumber = edText.text.toString()
                 mode = ""
+
+                if(result.endsWith(".0"))
+                    result = ""+result.toDouble().toInt()
+
+                edText.setText(result)
             } else
                 Toast.makeText(this, "Select Operation", Toast.LENGTH_LONG).show()
         }

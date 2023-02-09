@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <EditText
         android:id="@+id/edDisplay"
         android:layout_width="match_parent"
         android:layout_height="100dp"
@@ -14,17 +14,29 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/border"
-        android:ems="10"
+        android:gravity="right|center_vertical"
         android:hint="0"
-        android:lines="1"
+        android:singleLine="true"
         android:padding="8dp"
         android:text=""
-        android:gravity="right"
+        android:textDirection="rtl"
         android:textSize="70sp"
+
+        android:inputType="none"
+        android:textIsSelectable="true"
+        android:focusable="false"
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+<!--
+    app:autoSizeMaxTextSize="70sp"
+    app:autoSizeMinTextSize="32sp"
+    app:autoSizeStepGranularity="2sp"
+    app:autoSizeTextType="uniform"
+-->
+
 
     <LinearLayout
         android:layout_width="match_parent"
